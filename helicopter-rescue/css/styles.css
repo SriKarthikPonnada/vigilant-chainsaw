@@ -1,0 +1,301 @@
+@font-face {
+  font-family: "An ode to noone";
+  src: url(../assets/font/an-ode-to-noone.ttf);
+}
+
+body {
+  background-image: url(../assets/img/background.jpeg);
+}
+
+h1 {
+  font-family: "An ode to noone";
+  font-size: 40px;
+  color: #603a03;
+}
+
+h2 {
+  font-family: "An ode to noone";
+  font-size: 20px;
+  color: #fff;
+}
+
+h3 {
+  font-family: "An ode to noone";
+  font-size: 20px;
+  color: #603a03;
+}
+
+#container {
+  width: 950px;
+  position: relative;
+  margin: 0 auto;
+  height: 630px;
+  background-image: url(../assets/img/landscape.jpg);
+  border-color: #fff;
+  border-style: solid;
+}
+
+#card {
+  width: 350px;
+  height: 200px;
+  background-color: #fff;
+  margin: 100px auto 0;
+  text-align: center;
+  padding: 50px;
+}
+
+#score {
+  width: 450px;
+  height: 50px;
+  position: absolute;
+  left: 5px;
+  top: 590px;
+}
+
+#energy {
+  width: 140px;
+  height: 38px;
+  position: absolute;
+  left: 750px;
+  top: 7px;
+}
+
+#apache {
+  width: 256px;
+  height: 66px;
+  position: absolute;
+  left: 8px;
+  top: 179px;
+  background-image: url(../assets/img/apache.png);
+}
+
+#chopper {
+  width: 256px;
+  height: 66px;
+  position: absolute;
+  left: 689px;
+  top: 253px;
+  background-image: url(../assets/img/chopper.png);
+}
+
+#friend {
+  width: 44px;
+  height: 51px;
+  position: absolute;
+  left: 10px;
+  top: 464px;
+  background-image: url(../assets/img/friend.png);
+}
+
+#truck {
+  width: 165px;
+  height: 70px;
+  position: absolute;
+  left: 775px;
+  top: 447px;
+  background-image: url(../assets/img/truck.png);
+}
+
+#shot {
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  background-image: url(../assets/img/shot.png);
+}
+
+#explosion-chopper,
+#explosion-truck {
+  width: 15px;
+  height: 87px;
+  position: absolute;
+}
+
+#friend-death {
+  width: 44px;
+  height: 51px;
+  position: absolute;
+}
+
+#game-over {
+  width: 350px;
+  height: 200px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+.apache-animation {
+  background-image: url(../assets/img/apache.png);
+  animation: chopperAnimation 0.5s steps(2) infinite;
+  -webkit-animation: chopperAnimation 0.5s steps(2) infinite;
+  -moz-animation: chopperAnimation 0.5s steps(2) infinite;
+  -ms-animation: chopperAnimation 0.5s steps(2) infinite;
+  -o-animation: chopperAnimation 0.5s steps(2) infinite;
+}
+
+.chopper-animation {
+  background-image: url(../assets/img/chopper.png);
+  animation: chopperAnimation 0.5s steps(2) infinite;
+  -webkit-animation: chopperAnimation 0.5s steps(2) infinite;
+  -moz-animation: chopperAnimation 0.5s steps(2) infinite;
+  -ms-animation: chopperAnimation 0.5s steps(2) infinite;
+  -o-animation: chopperAnimation 0.5s steps(2) infinite;
+}
+
+@keyframes chopperAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+@-webkit-keyframes chopperAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+@-moz-keyframes chopperAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+@-ms-keyframes chopperAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+@-o-keyframes chopperAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+.friend-animation {
+  background-image: url(../assets/img/friend.png);
+  animation: friendAnimation 0.9s steps(12) infinite;
+  -webkit-animation: friendAnimation 0.9s steps(12) infinite;
+  -moz-animation: friendAnimation 0.9s steps(12) infinite;
+  -ms-animation: friendAnimation 0.9s steps(12) infinite;
+  -o-animation: friendAnimation 0.9s steps(12) infinite;
+}
+
+@keyframes friendAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-webkit-keyframes friendAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-moz-keyframes friendAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-ms-keyframes friendAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-o-keyframes friendAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+.friend-death {
+  width: 44px;
+  height: 51px;
+  background-image: url(../assets/img/friend-death.png);
+  animation: deathAnimation 0.5s steps(7) infinite;
+  -webkit-animation: deathAnimation 0.5s steps(7) infinite;
+  -moz-animation: deathAnimation 0.5s steps(7) infinite;
+  -ms-animation: deathAnimation 0.5s steps(7) infinite;
+  -o-animation: deathAnimation 0.5s steps(7) infinite;
+}
+
+@keyframes deathAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-webkit-keyframes deathAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-moz-keyframes deathAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-ms-keyframes deathAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-o-keyframes deathAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}

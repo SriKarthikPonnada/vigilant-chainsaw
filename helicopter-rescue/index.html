@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helicopter Rescue</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="card">
+        <h1>Helicopter Rescue</h1>
+        <p>
+          Use W key to move helicopter up, S key to move helicopter down and D
+          key to shoot.
+        </p>
+        <button onclick="start()">Start!</button>
+      </div>
+    </div>
+    <audio
+      id="musicBackground"
+      preload="auto"
+      src="assets/sound/background.mp3"
+    ></audio>
+    <audio src="assets/sound/death.mp3" preload="auto" id="soundDeath"></audio>
+    <audio
+      id="soundExplosion"
+      preload="auto"
+      src="assets/sound/explosion.mp3"
+    ></audio>
+    <audio
+      id="soundGameOver"
+      preload="auto"
+      src="assets/sound/gameover.mp3"
+    ></audio>
+    <audio
+      id="soundRescue"
+      preload="auto"
+      src="assets/sound/rescue.mp3"
+    ></audio>
+    <audio src="assets/sound/shot.mp3" preload="auto" id="soundShoot"></audio>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-collision.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
